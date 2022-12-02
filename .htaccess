@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^cart/ /elements/cart.php
+
+# RewriteCond %{REQUEST_URI} !^cart/
+# RewriteRule .+ index.php
+
+ErrorDocument 404 /404.php
+
+# RewriteRule ^() index.php?id=$1&title=$2&price=$3
